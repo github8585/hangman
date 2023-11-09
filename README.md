@@ -1,23 +1,18 @@
-Python-Based Hangman Console Game
-Project Synopsis:
-This repository houses a Python implementation of the classic game, Hangman. It’s a text-centric interface where users interact and guess the concealed word, one letter at a time, under a limited allowance of incorrect guesses.
+### **Python-Based Hangman Console Game Project Synopsis**
 
-Instructions for Engagement:
-Upon initiation, the program selects a word at random from a predefined catalog of words.
-Users are sequentially prompted to posit a letter as their guess.
-Should the letter exist within the word, its locations are unmasked.
-Conversely, should the guess be incorrect, the user loses one of their finite lives.
-Victory is achieved by unveiling the entire word within the allocated lives; otherwise, a defeat is declared.
-Architectural Overview:
-The underlying architecture of this game orbits around a central Python class, named Hangman. This class is the custodian of the game’s status and encapsulates methods to validate guesses and render the prevailing game state. The execution commences with the play_game function, initializing a game instance and managing the game sequence. The pivotal methods within the Hangman class encompass check_guess, ask_for_input, is_game_over, has_won, and display_game_state.
+This repository is dedicated to a Python rendition of the classic Hangman game. It features a console-based interface where players guess hidden words letter by letter, with a limited number of incorrect guesses permitted.
 
-Execution Procedure:
-To immerse in the game, launch the Python script via the terminal or command interface with the command python3 scriptname.py, substituting scriptname with the genuine name of your script file.
+**Instructions for Engagement:**
+When the game starts, it randomly selects a word from a set list. Players will guess letters in sequence. If the guess is correct, the letter's positions in the word are revealed. If incorrect, the player loses one life. The game is won by guessing the word within the number of lives given; otherwise, it results in a loss.
 
-Vocabulary Catalog:
-The inherent vocabulary catalog encapsulates the words 'apple', 'banana', and 'cherry'. This catalog is adaptable and can be configured to integrate any assortment of words as per preference.
+**Architectural Overview:**
+At the heart of the game is a Python class called `Hangman`, which maintains the game's state and contains methods to check guesses and show the current state of the game. The game begins with the `play_game` function, which creates an instance of the game and controls the flow. Key methods include `check_guess`, `ask_for_input`, `is_game_over`, `has_won`, and `display_game_state`.
 
-Participation and Contributions:
-Contributions to the enhancement of this project are highly welcomed. For substantial modifications or enhancements, kindly initialize a discussion by opening an issue before making any pull requests.
+**Execution Procedure:**
+To play the game, run the Python script in a terminal or command line with `python3 scriptname.py`, replacing `scriptname` with the actual script filename.
 
-Feel free to adapt it more to fit any other specific information or styling you prefer!
+**Vocabulary Catalog:**
+The game's word list currently includes 'apple', 'banana', and 'cherry', but it's designed to be easily expandable to include any desired set of words.
+
+**Participation and Contributions:**
+We invite contributions to improve this project. For significant changes, please open an issue to discuss your ideas before making a pull request.
